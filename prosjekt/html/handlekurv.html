@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webshop</title>
+    <link href="../css/prosjekt.css" rel="stylesheet">
+</head>
+<body>
+    <header>            
+        <div id="topmeny">
+            <img src="../bilder/logo.png"width="370"height="80">
+                <ul>
+                    <li><a href="prosjekt.html">Hjem</a></li>
+                    <li><a href="handle.html">Handle</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="omoss.html">Om oss</a></li>
+                    <li><a class="active" href="handlekurv.html">Handlekurv</a></li>        
+                </ul>
+        </div>
+    </header>
+    <main>
+        <p>Bestill her</p>
+            <form id="skjema">
+                <br><label>Velg vare <input type="text"> </label>
+                <br><label>Antall <input type="number"> </label>
+                <br><label>Adresse <input type="text"> </label>
+                <br><label>Betaling med<input type="text"> </label>            
+                <br><button id="bestill" type="button">Lagre</button>
+            </form>
+        <script>
+            let btn = document.getElementById("bestill");
+                        
+            btn.addEventListener("click", lagreData);
+            
+            function lagreData () {
+            alert("Hei" + ". Bestillingen din er nå motatt.");
+            }
+        </script>
+
+    <div id="menyl"></div>
+    <div id="menyr"></div>
+            
+    </main>
+</body>
+</html>
