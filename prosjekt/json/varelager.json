@@ -1,0 +1,24 @@
+{
+    "headphone" : {
+      "trådløse" : {
+        "beats by dre" : {
+          "bilde" : "beats-traadløs.jpg",
+          "navn" : "Beast Studio Wireless",
+          "pris" : 2499,
+          "produsent" : "Monster"
+        },
+        "bose" : {
+          "bilde" : "bose-quiet-comfort-35.png",
+          "navn" : "Bose Quiet Comfort 35",
+          "pris" : 3499,
+          "produsent" : "Bose"
+        },
+        "sony" : {
+          "bilde" : "Sony-MDRZX770BN.png",
+          "navn" : "Sony MDRZX770BN",
+          "pris" : 1499,
+          "produsent" : "Sony"
+        }
+      }
+    }
+  }

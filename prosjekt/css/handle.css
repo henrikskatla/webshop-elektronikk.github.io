@@ -1,0 +1,165 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 61px 0px;
+  }  
+
+.TextOverImage {
+    position: relative;
+    grid-column: 1 / 1;
+    grid-row: 1 / 4;
+    background-size: 100%;
+    background-position: center;
+    transition:0.5s;
+    background-repeat: no-repeat;
+  }
+.TextOverImage:hover {
+    background-size: 110%;  
+  }
+.TextOverImage:after{
+    position: absolute;
+    top:90%;
+    bottom:0;
+    left:0;
+    right:0;
+    white-space: pre-wrap;
+    overflow:hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-text);
+    transition:0.5s;
+  }
+.TextOverImage:hover:after{
+    top:0;
+    padding:8px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+.TextOverImage:first-line{
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .TextOverImageTwo {
+    position: relative;
+    grid-column: 2 / 2;
+    grid-row: 1 / 4;
+    background-size: 110%;
+    background-position: center;
+    transition:0.5s;
+    background-repeat: no-repeat;
+  }
+.TextOverImageTwo:hover {
+    background-size: 127%;
+    }
+.TextOverImageTwo:after{
+    position: absolute;
+    top:90%;
+    bottom:0;
+    left:0;
+    right:0;
+    white-space: pre-wrap;
+    overflow:hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-text);
+    transition:0.5s;
+  }
+.TextOverImageTwo:hover:after{
+    top:0;
+    padding:8px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+.TextOverImageTwo:first-line{
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+
+.TextOverImageThree {
+    position: relative;
+    grid-column: 3 / 3;
+    grid-row: 1 / 4;
+    background-size: 80%;
+    background-position: center;
+    transition:0.5s;
+    background-repeat: no-repeat;
+  }
+.TextOverImageThree:hover {
+    background-size: 90%;
+    }
+.TextOverImageThree:after{
+    position: absolute;
+    top:90%;
+    bottom:0;
+    left:0;
+    right:0;
+    white-space: pre-wrap;
+    overflow:hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-text);
+    transition:0.5s;
+  }
+.TextOverImageThree:hover:after{
+    top:0;
+    padding:8px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+.TextOverImageThree:first-line{
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+
+.button {
+    background-color: #00C7FF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    box-shadow: 3px 3px 3px gray;
+}
+.button:hover{
+  box-shadow: 4px 3px 1px gray; 
+}
+
+.button:active{
+  box-shadow:none;
+  transform: translate(3px,2px);
+}
+
+
+
+.button1 {
+  border-radius: 12px;
+  position: absolute;
+  left: 9%;
+  top:68%;
+ 
+}
+.button2 {
+  border-radius: 12px;
+  position: absolute;
+  left: 42%;
+  top:68%;
+}
+.button3 {
+  border-radius: 12px;
+  position: absolute;
+  left: 76%;
+  top:68%;
+}
+
+*:focus {outline:none}
