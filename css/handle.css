@@ -1,0 +1,614 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 61px 0px;
+}
+
+.TextOverImage {
+    position: relative;
+    grid-column: 1 / 1;
+    grid-row: 1 / 4;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+}
+
+.TextOverImage:hover {
+    background-size: 110%;
+}
+
+.TextOverImage:after {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.TextOverImage:hover:after {
+    top: 0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.TextOverImage:first-line {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.TextOverImageTwo {
+    position: relative;
+    grid-column: 2 / 2;
+    grid-row: 1 / 4;
+    background-size: 110%;
+    background-position: center;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+}
+
+.TextOverImageTwo:hover {
+    background-size: 127%;
+}
+
+.TextOverImageTwo:after {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.TextOverImageTwo:hover:after {
+    top: 0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.TextOverImageTwo:first-line {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.TextOverImageThree {
+    position: relative;
+    grid-column: 3 / 3;
+    grid-row: 1 / 4;
+    background-size: 80%;
+    background-position: center;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+}
+
+.TextOverImageThree:hover {
+    background-size: 90%;
+}
+
+.TextOverImageThree:after {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.TextOverImageThree:hover:after {
+    top: 0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.TextOverImageThree:first-line {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.TextOverImageFour {
+    position: relative;
+    grid-column: 1 / 1;
+    grid-row: 5 / 8;
+    background-size: 80%;
+    background-position: center;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+}
+
+.TextOverImageFour:hover {
+    background-size: 90%;
+}
+
+.TextOverImageFour:after {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.TextOverImageFour:hover:after {
+    top: 0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.TextOverImageFour:first-line {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.TextOverImageFive {
+    position: relative;
+    grid-column: 2 / 2;
+    grid-row: 5 / 8;
+    background-size: 95%;
+    background-position: center;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+}
+
+.TextOverImageFive:hover {
+    background-size: 105%;
+}
+
+.TextOverImageFive:after {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.TextOverImageFive:hover:after {
+    top: 0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.TextOverImageFive:first-line {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.TextOverImageSix {
+    position: relative;
+    grid-column: 3 / 3;
+    grid-row: 5 / 8;
+    background-size: 90%;
+    background-position: center;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+}
+
+.TextOverImageSix:hover {
+    background-size: 100%;
+}
+
+.TextOverImageSix:after {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.TextOverImageSix:hover:after {
+    top: 0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.TextOverImageSix:first-line {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.TextOverImageSeven {
+    position: relative;
+    grid-column: 1 / 1;
+    grid-row: 9 / 12;
+    background-size: 80%;
+    background-position: center;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+}
+
+.TextOverImageSeven:hover {
+    background-size: 90%;
+}
+
+.TextOverImageSeven:after {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.TextOverImageSeven:hover:after {
+    top: 0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.TextOverImageSeven:first-line {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.TextOverImageEight {
+    position: relative;
+    grid-column: 2 / 2;
+    grid-row: 9 / 12;
+    background-size: 95%;
+    background-position: center;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+}
+
+.TextOverImageEight:hover {
+    background-size: 105%;
+}
+
+.TextOverImageEight:after {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.TextOverImageEight:hover:after {
+    top: 0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.TextOverImageEight:first-line {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.TextOverImageNine {
+    position: relative;
+    grid-column: 3 / 3;
+    grid-row: 9 / 12;
+    background-size: 90%;
+    background-position: center;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+}
+
+.TextOverImageNine:hover {
+    background-size: 100%;
+}
+
+.TextOverImageNine:after {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.TextOverImageNine:hover:after {
+    top: 0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.TextOverImageNine:first-line {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#button1 {
+    border-radius: 12px;
+    position: absolute;
+    left: 9%;
+    top: 78%;
+    background-color: #00C7FF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    box-shadow: 3px 3px 3px gray
+}
+
+#button1:hover {
+    box-shadow: 4px 3px 1px gray;
+}
+
+#button1:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+
+#button2 {
+    border-radius: 12px;
+    position: absolute;
+    left: 42%;
+    top: 78%;
+    background-color: #00C7FF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#button2:hover {
+    box-shadow: 4px 3px 1px gray;
+}
+
+#button2:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+
+#button3 {
+    border-radius: 12px;
+    position: absolute;
+    left: 76%;
+    top: 78%;
+    background-color: #00C7FF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#button3:hover {
+    box-shadow: 4px 3px 1px gray;
+}
+
+#button3:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+
+#button4 {
+    border-radius: 12px;
+    position: absolute;
+    left: 9%;
+    top: 148%;
+    background-color: #00C7FF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#button4:hover {
+    box-shadow: 4px 3px 1px gray;
+}
+
+#button4:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+
+#button5 {
+    border-radius: 12px;
+    position: absolute;
+    left: 42%;
+    top: 148%;
+    background-color: #00C7FF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#button5:hover {
+    box-shadow: 4px 3px 1px gray;
+}
+
+#button5:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+
+#button6 {
+    border-radius: 12px;
+    position: absolute;
+    left: 76%;
+    top: 148%;
+    background-color: #00C7FF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#button6:hover {
+    box-shadow: 4px 3px 1px gray;
+}
+
+#button6:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+
+#button7 {
+    border-radius: 12px;
+    position: absolute;
+    left: 9%;
+    top: 218%;
+    background-color: #00C7FF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#button7:hover {
+    box-shadow: 4px 3px 1px gray;
+}
+
+#button7:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+
+#button8 {
+    border-radius: 12px;
+    position: absolute;
+    left: 42%;
+    top: 218%;
+    background-color: #00C7FF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#button8:hover {
+    box-shadow: 4px 3px 1px gray;
+}
+
+#button8:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+
+#button9 {
+    border-radius: 12px;
+    position: absolute;
+    left: 76%;
+    top: 218%;
+    background-color: #00C7FF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#button9:hover {
+    box-shadow: 4px 3px 1px gray;
+}
+
+#button9:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+
+*:focus {
+    outline: none
+}

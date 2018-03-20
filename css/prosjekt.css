@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding-top: 20px;
+}
+
+main {
+    position: absolute;
+    padding: 2em 1em 1em 1em;
+    top: 15%;
+    left: 11%;
+    right: 11%;
+    width: 78%;
+    height: 575px;
+}
+
+#topmeny {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;    
+    overflow: hidden;
+    background: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 11%;
+    right: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 99;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #00C7FF;
+}
+
+li {
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+#menyl {
+    position: fixed;
+    left: 0;
+    top: 18%;
+    width: 10%;
+    height: 83%;
+    background: url("../bilder/ad.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+#menyr {
+    position: fixed;
+    right: 0%;
+    top: 18%;
+    width: 10%;
+    height: 83%;
+    background: url("../bilder/ad.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+#skjema {
+    position: fixed;
+    left: 20%;
+    right: 60%;
+    top: 60%;
+    bottom: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+input[type=text] {
+    width: 130px;
+    float: right;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 20%;
+}
+
+#kunderegister {
+    width: 80%;
+    height: 7%;
+    top: 12%;
+}
+
+#kunderegister label {
+    float:left;
+}
+
+#kunderegister input[type=text] {
+    width: 100px;
+    float: left;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px 10px 5px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#animasjon {
+    Position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 360px;
+    background: url("../bilder/drone.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    animation: gaaTur 6s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes gaaTur {
+    0% {top:60%; left:0%;transform: rotate(0deg);}
+    25% {top:60%; left:63%; transform: rotate(0deg);}
+    50% {top:0%; left:63%; transform: rotate(0deg);}
+    75% {top:0%; left:0%; transform: rotate(0deg);}
+    100% {top:60%; left:0%; transform: rotate(0deg);}
+}
+
+#text {
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    top: 45%;
+}
+
+#svg {
+    left: 40%;
+    top: 60%;
+    right: 50%;
+    bottom: 30%;
+}

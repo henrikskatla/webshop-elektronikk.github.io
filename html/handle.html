@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Webshop</title>
+    <link href="../css/prosjekt.css" rel="stylesheet">
+    <link href="../css/handle.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <div id="topmeny">
+            <img src="../bilder/logo.png" width="520" height="80">
+            <ul>
+                <li><a href="prosjekt.html">Hjem</a></li>
+                <li><a class="active" href="handle.html">Handle</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="handlekurv.html">Handlekurv</a></li>
+                <li><a href="animajon.html">Kommer snart</a></li>
+                <input type="text" placeholder="søk..." id="find">
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="kunderegister">
+            <label id="navn">Skriv navn her:</label>
+            <input id="kunde" type="text"> </div>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="TextOverImage" style="background-image:url(../bilder/beats-traadlos.png)" data-text="Beats by dr. Dre studio
+
+             Aktiv støyredusering
+             Opptil 22 timer batterilevetid
+             Enkel tilkobling av Apple-enheter via W1 
+             Bluetooth-chip
+             10 minutter lading gir 3 timer spilletid
+             Opptil 40 timer batteritid uten bruk av ANC
+             Komfortabel passform
+
+             PRIS 2 499,-">
+            </div>
+
+            <div class="TextOverImageTwo" style="background-image:url(../bilder/bose-quiet-comfort-35.png)" data-text="Bose quiet comfort 35
+            
+            Støyredusering i verdensklasse
+            Trådløse hodetelefoner med Bluetooth og 
+            NFC
+            Equalizer som optimaliserer lydopplevelsen 
+            uansett lydnivå
+            Opptil 20 timer batteritid
+            Hurtiglading. 15 minutter lading gir 2.5 timer 
+            spilletid
+            Multi-point støtte lar deg enkelt bytte mellom 
+            flere bluetooth enheter
+            Optimalisert støyredusering ved 
+            telefonsamtaler
+
+            PRIS 3 499,-">
+            </div>
+
+            <div class="TextOverImageThree" style="background-image:url(../bilder/Sony-MDRZX770BN.png)" data-text="Sony headsett
+            
+            Enkel bluetooth tilkobling med NFC 
+            one.touch
+            Opptil 13 timers batteritid
+            40 mm drivere for god lyd
+
+            PRIS 1 499,-">
+            </div>
+
+            <div class="TextOverImageFour" style="background-image:url(../bilder/iphonex.png)" data-text="Iphone X
+
+            Utforsk det brede utvalget av enestående 
+            funksjoner i den spennende iPhone X. Lås opp 
+            telefonen din med ansiktsgjenkjenning og del 
+            personlig tilpassede animoji. Nyt den 5,8'' 
+            store Super Retina kant-til-kant-skjermen for 
+            en altoppslukende opplevelse. 
+            5,8'' SuperRetina-skjerm, Face ID og Animoji
+            Todelt 12 megapikslers kamera, 4K video
+
+            PRIS 10 699,-">
+            </div>
+
+            <div class="TextOverImageFive" style="background-image:url(../bilder/iphone8.png)" data-text="iPhone 8
+           
+           iPhone 8 har en splitter ny design, utført i solid 
+           glass. En forbedret utgave av verdens mest 
+           populære kamera. Den smarteste og kraftigste 
+           chipen i en smarttelefon – noen gang. 
+           Den kan lades trådløst, lekende lett, 
+           og vil gi deg opplevelser i utvidet 
+           virkelighet du knapt kan forestille deg.
+
+           PRIS 8 499,-">
+            </div>
+
+
+            <div class="TextOverImageSix" style="background-image:url(../bilder/iphone4s.png)" data-text="iPhone 4s
+           
+           iPhone 4s er en av de gamlere å utgående apple
+           produktene, men den er også ganske ettertraktet
+           da det er svært få som selger den enda. Her får
+           du en god telefon med det meste du trenger
+
+           PRIS 1 799,-">
+            </div>
+
+            <div class="TextOverImageSeven" style="background-image:url(../bilder/ps4.jpeg)" data-text="PlayStation 4 Pro
+            
+            Kraftigere enn noensinne
+            4K oppløsning og HDR farger
+            DualShock 4 håndkontroll
+            1 TB harddisk
+
+            PRIS 3 499,-">
+            </div>
+
+            <div class="TextOverImageEight" style="background-image:url(../bilder/xbox.jpeg)" data-text="Xbox One S
+
+            1 TB harddisk
+            UHD 4K Blu-ray-spiller
+            Assassin's Creed Origins
+            Rainbow Six Siege
+            1 håndkontroll
+
+            PRIS 2 499,-">
+            </div>
+
+            <div class="TextOverImageNine" style="background-image:url(../bilder/tv.jpeg)" data-text="Samsung 82'' 4K TV
+            
+            2300 PQI for raske sekvenser
+            Precision Black for dypere svartnivå
+            Samsung One Remote Premium
+            Sølvfarget Slim Edge design
+            Samsung One Connect
+
+            PRIS 30 000,-">
+            </div>
+        </div>
+
+        <form>
+            <button id="button1" data-pris="2499,-" data-varenavn="Beats by dr. Dre studio" type="button">Kjop</button>
+            <button id="button2" data-pris="3499,-" data-varenavn="Bose quiet comfort 35" type="button">Kjop</button>
+            <button id="button3" data-pris="1499,-" data-varenavn="Sony headsett" type="button">Kjop</button>
+            <button id="button4" data-pris="10699,-" data-varenavn="iPhone X" type="button">Kjop</button>
+            <button id="button5" data-pris="8499,-" data-varenavn="iPhone 8" type="button">Kjop</button>
+            <button id="button6" data-pris="1799,-" data-varenavn="iPhone 4s" type="button">Kjop</button>
+            <button id="button7" data-pris="3499,-" data-varenavn="PlayStation 4 Pro" type="button">Kjop</button>
+            <button id="button8" data-pris="2499,-" data-varenavn="Xbox One S" type="button">Kjop</button>
+            <button id="button9" data-pris="30000,-" data-varenavn="Samsung 82'' 4K TV" type="button">Kjop</button>
+        </form>
+
+        <div id="menyl"></div>
+        <div id="menyr"></div>
+    </main>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAdiBHlwk6TSyO5rdtcg8LjDzvYDXDjwiI",
+            authDomain: "prosjekt-1372a.firebaseapp.com",
+            databaseURL: "https://prosjekt-1372a.firebaseio.com",
+            projectId: "prosjekt-1372a",
+            storageBucket: "prosjekt-1372a.appspot.com",
+            messagingSenderId: "1013246905839"
+        };
+        firebase.initializeApp(config);
+        let database = firebase.database();
+
+        let btnKjop = document.getElementById("button1");
+        btnKjop.addEventListener("click", kjopTing1);
+
+        function kjopTing1(e) {
+            let kunde = document.getElementById("kunde").value;
+            let pris = this.dataset.pris;
+            let vare = this.dataset.varenavn;
+            let ref = database.ref("bestillinger/" + kunde);
+            ref.set({ vare, pris });
+        }
+
+        let btnKjop2 = document.getElementById("button2");
+        btnKjop2.addEventListener("click", kjopTing2);
+
+        function kjopTing2(e) {
+            let kunde = document.getElementById("kunde").value;
+            let pris = this.dataset.pris;
+            let vare = this.dataset.varenavn;
+            let ref = database.ref("bestillinger/" + kunde);
+            ref.set({ vare, pris });
+        }
+
+        let btnKjop3 = document.getElementById("button3");
+        btnKjop3.addEventListener("click", kjopTing3);
+
+        function kjopTing3(e) {
+            let kunde = document.getElementById("kunde").value;
+            let pris = this.dataset.pris;
+            let vare = this.dataset.varenavn;
+            let ref = database.ref("bestillinger/" + kunde);
+            ref.set({ vare, pris });
+        }
+
+        let btnKjop4 = document.getElementById("button4");
+        btnKjop4.addEventListener("click", kjopTing4);
+
+        function kjopTing4(e) {
+            let kunde = document.getElementById("kunde").value;
+            let pris = this.dataset.pris;
+            let vare = this.dataset.varenavn;
+            let ref = database.ref("bestillinger/" + kunde);
+            ref.set({ vare, pris });
+        }
+
+        let btnKjop5 = document.getElementById("button5");
+        btnKjop5.addEventListener("click", kjopTing5);
+
+        function kjopTing5(e) {
+            let kunde = document.getElementById("kunde").value;
+            let pris = this.dataset.pris;
+            let vare = this.dataset.varenavn;
+            let ref = database.ref("bestillinger/" + kunde);
+            ref.set({ vare, pris });
+        }
+
+        let btnKjop6 = document.getElementById("button6");
+        btnKjop6.addEventListener("click", kjopTing6);
+
+        function kjopTing6(e) {
+            let kunde = document.getElementById("kunde").value;
+            let pris = this.dataset.pris;
+            let vare = this.dataset.varenavn;
+            let ref = database.ref("bestillinger/" + kunde);
+            ref.set({ vare, pris });
+        }
+
+        let btnKjop7 = document.getElementById("button7");
+        btnKjop7.addEventListener("click", kjopTing7);
+
+        function kjopTing7(e) {
+            let kunde = document.getElementById("kunde").value;
+            let pris = this.dataset.pris;
+            let vare = this.dataset.varenavn;
+            let ref = database.ref("bestillinger/" + kunde);
+            ref.set({ vare, pris });
+        }
+
+        let btnKjop8 = document.getElementById("button8");
+        btnKjop8.addEventListener("click", kjopTing8);
+
+        function kjopTing8(e) {
+            let kunde = document.getElementById("kunde").value;
+            let pris = this.dataset.pris;
+            let vare = this.dataset.varenavn;
+            let ref = database.ref("bestillinger/" + kunde);
+            ref.set({ vare, pris });
+        }
+
+        let btnKjop9 = document.getElementById("button9");
+        btnKjop9.addEventListener("click", kjopTing9);
+
+        function kjopTing9(e) {
+            let kunde = document.getElementById("kunde").value;
+            let pris = this.dataset.pris;
+            let vare = this.dataset.varenavn;
+            let ref = database.ref("bestillinger/" + kunde);
+            ref.set({ vare, pris });
+        }
+    </script>
+</body>
+
+</html>
